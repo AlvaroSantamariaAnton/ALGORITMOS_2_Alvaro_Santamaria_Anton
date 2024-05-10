@@ -1,6 +1,11 @@
 from enum import Enum
-
 # Source packages.
+
+"""
+En este código, definimos una enumeración llamada 'GENRE', que contiene cuatro posibles valores: 'ROCK', 'POP', 'EDM' y 'COUNTRY'. 
+Estos representan diferentes géneros de música. 
+Esta enumeración será utilizada en la clase Song para etiquetar las canciones con su género correspondiente.
+"""
 
 # Enum para representar diferentes géneros de música
 class GENRE(Enum):

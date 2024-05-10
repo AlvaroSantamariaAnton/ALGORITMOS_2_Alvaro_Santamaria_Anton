@@ -2,6 +2,12 @@ from datetime import date
 from genre import GENRE  # Importar el enum GENRE desde genre.py
 # Importar los módulos necesarios para la ejecución del programa.
 
+"""
+Esta implementación de la clase 'Song' incluye un constructor que verifica los tipos y valores de los parámetros 
+y lanza excepciones apropiadas cuando los requisitos no se cumplen. 
+También incluye los métodos 'getters' y 'setters' para acceder y modificar los atributos de la canción, 
+así como los métodos add_genre, '__eq__' y '__str__'.
+"""
 
 class Song():
     """Constructor of the class.
@@ -93,10 +99,6 @@ class Song():
     # Método para representar la canción como una cadena
     def __str__(self):
       return f"{self.artist} tocando {self.name} durante {self.duration} segundos."
-
-
-
-
 
 
 def main():
