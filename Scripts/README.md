@@ -131,5 +131,7 @@ Tomemos la lista [34, 7, 23, 32, 5] como ejemplo:
 
 Aunque el Bubble Sort es fácil de entender y aplicar, su uso se limita principalmente a fines educativos o para ordenar conjuntos de datos muy pequeños debido a su baja eficiencia en términos de tiempo de ejecución.
 
+## Ejercicio Functools
+
 ## Link al repositorio de GitHub
 https://github.com/AlvaroSantamariaAnton/ALGORITMOS_2_Alvaro_Santamaria_Anton.git
