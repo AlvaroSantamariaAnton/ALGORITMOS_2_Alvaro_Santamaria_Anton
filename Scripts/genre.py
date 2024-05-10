@@ -2,6 +2,7 @@ from enum import Enum
 
 # Source packages.
 
+# Enum para representar diferentes géneros de música
 class GENRE(Enum):
     ROCK = 1
     POP = 2

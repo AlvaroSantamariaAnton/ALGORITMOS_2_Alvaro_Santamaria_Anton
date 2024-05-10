@@ -37,54 +37,62 @@ class Song():
         """
     #Realizar la implementación de la clase Song.
     
+    # Cosntructor de la clase Song
     def __init__(self, id, name, artist, duration, release_date, genres=[]):
-        if not isinstance(id, int):
-            raise TypeError("ID must be an integer.")
-        if not isinstance(name, str):
-            raise TypeError("Name must be a string.")
-        if not isinstance(artist, str):
-            raise TypeError("Artist must be a string.")
-        if not isinstance(duration, int) or duration <= 10:
-            raise ValueError("Duration must be a positive integer greater than 10 seconds.")
-        if not isinstance(release_date, date) or release_date > date.today():
-            raise ValueError("Release date must be a date in the past.")
-        if not all(isinstance(genre, GENRE) for genre in genres):
-            raise TypeError("Genres must be instances of GENRE enum.")
+      
+      # Verificamos los tipos y valores de los parámetros
+      if not isinstance(id, int):
+        raise TypeError("ID must be an integer.")
+      if not isinstance(name, str):
+        raise TypeError("Name must be a string.")
+      if not isinstance(artist, str):
+        raise TypeError("Artist must be a string.")
+      if not isinstance(duration, int) or duration <= 10:
+        raise ValueError("Duration must be a positive integer greater than 10 seconds.")
+      if not isinstance(release_date, date) or release_date > date.today():
+        raise ValueError("Release date must be a date in the past.")
+      if not all(isinstance(genre, GENRE) for genre in genres):
+        raise TypeError("Genres must be instances of GENRE enum.")
 
-        self.id = id
-        self.name = name
-        self.artist = artist
-        self.duration = duration
-        self.release_date = release_date
-        self.genres = genres
+      # Asignamos los atributos
+      self.id = id
+      self.name = name
+      self.artist = artist
+      self.duration = duration
+      self.release_date = release_date
+      self.genres = genres
 
+    # Métodos getters para acceder a los atributos de la canción
     def get_id(self):
-        return self.id
+      return self.id
 
     def get_name(self):
-        return self.name
+      return self.name
 
     def get_artist(self):
-        return self.artist
+      return self.artist
 
     def get_duration(self):
-        return self.duration
+      return self.duration
 
     def get_release_date(self):
-        return self.release_date
+      return self.release_date
 
     def get_genres(self):
-        return self.genres
+      return self.genres
 
+    # Método para añadir un género a la canción
     def add_genre(self, genre):
-        if genre not in self.genres:
-            self.genres.append(genre)
+      if genre not in self.genres:
+        self.genres.append(genre)
 
+    # Método para comparar dos canciones basadas en su identificador único
     def __eq__(self, other):
-        return self.id == other.id
+      return self.id == other.id
 
+    # Método para representar la canción como una cadena
     def __str__(self):
-        return f"{self.artist} tocando {self.name} durante {self.duration} segundos."
+      return f"{self.artist} tocando {self.name} durante {self.duration} segundos."
 
 
 
