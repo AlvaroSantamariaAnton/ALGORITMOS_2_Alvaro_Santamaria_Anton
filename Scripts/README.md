@@ -133,5 +133,17 @@ Aunque el Bubble Sort es fácil de entender y aplicar, su uso se limita principa
 
 ## Ejercicio Functools
 
+### Descripción
+Este proyecto implementa una clase `SimpleOperations` en Python, que proporciona métodos para calcular descuentos y tasas de impuestos. Utiliza la herramienta `functools.partial` para crear versiones especializadas de estas funciones con parámetros predefinidos.
+
+### Funcionalidades
+- `apply_discount(price, discount)`: Aplica un descuento al precio dado y retorna el nuevo precio.
+- `calculate_tax(price, tax_rate)`: Calcula y agrega el impuesto al precio dado.
+
+### Uso
+1. Clona este repositorio en tu máquina local.
+2. Asegúrate de tener Python instalado en tu sistema.
+3. Ejecuta el archivo `SimpleOperations.py`.
+
 ## Link al repositorio de GitHub
 https://github.com/AlvaroSantamariaAnton/ALGORITMOS_2_Alvaro_Santamaria_Anton.git
