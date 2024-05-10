@@ -101,7 +101,35 @@ Efecto:
 
 ## Ejercicio de Ordenación
 
+### Bubble Sort
 
+El método Bubble Sort, o Ordenamiento Burbuja, es un algoritmo de ordenación simple y fácil de entender. Opera comparando pares de elementos adyacentes en una lista y realizando intercambios si están en el orden incorrecto. Este proceso se repite hasta que la lista esté completamente ordenada.
+
+#### Funcionamiento:
+
+1. Comienza comparando el primer elemento con el segundo.
+2. Si el primer elemento es mayor que el segundo, se intercambian.
+3. Luego, compara el segundo con el tercero, y así sucesivamente, hasta llegar al final de la lista.
+4. Después de la primera pasada, el elemento más grande estará en la última posición.
+5. Repite este proceso para todos los elementos restantes, ignorando el último elemento en cada pasada ya que ya está en su posición correcta.
+6. Continúa estas iteraciones hasta que no se realicen más intercambios, lo que indica que la lista está ordenada.
+
+#### Conveniencia de uso:
+
+El Bubble Sort es adecuado para pequeñas listas o en casos donde la simplicidad y la comprensión del algoritmo son prioritarias sobre la eficiencia. Sin embargo, en términos de eficiencia, su desempeño es pobre para listas grandes, ya que su complejidad es de O(n^2), lo que significa que el tiempo de ejecución aumenta cuadráticamente con el tamaño de la lista.
+
+#### Ejemplo conceptual:
+
+Tomemos la lista [34, 7, 23, 32, 5] como ejemplo:
+
+1. Comenzamos comparando 34 y 7. Como 34 es mayor que 7, los intercambiamos: [7, 34, 23, 32, 5].
+2. Luego, comparamos 34 y 23. No hay necesidad de intercambiar: [7, 23, 34, 32, 5].
+3. Continuamos con 34 y 32. Se intercambian: [7, 23, 32, 34, 5].
+4. Ahora, comparamos 34 y 5. Se intercambian: [7, 23, 32, 5, 34].
+5. En la primera pasada, el elemento más grande (34) se coloca en su posición final. Repetimos el proceso con los elementos restantes.
+6. Después de algunas iteraciones adicionales, obtenemos la lista ordenada: [5, 7, 23, 32, 34].
+
+Aunque el Bubble Sort es fácil de entender y aplicar, su uso se limita principalmente a fines educativos o para ordenar conjuntos de datos muy pequeños debido a su baja eficiencia en términos de tiempo de ejecución.
 
 ## Link al repositorio de GitHub
 https://github.com/AlvaroSantamariaAnton/ALGORITMOS_2_Alvaro_Santamaria_Anton.git
